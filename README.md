@@ -39,7 +39,7 @@ https://gitlab.torproject.org/tpo/core/torsocks/
 1. `forge install`
 1. start `./tor`
 1. add `torsocks` to PATH
-1. `source tornadocash-goverance-cli.sh`
+1. `source tornadocash-governance-cli.sh`
 
 ### usage
 
