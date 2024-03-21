@@ -36,8 +36,10 @@ https://gitlab.torproject.org/tpo/core/torsocks/
 ### to install and setup environment
 
 1. `git clone https://github.com/ob1ock/tornadocash-governance-cli`
-1. `forge install`
-1. start `./tor`
+1. `cd tornadocash-governance-cli`
+1. `forge install foundry-rs/forge-std`
+1. `forge install openzeppelin/openzeppelin-contracts`
+1. start `tor`
 1. add `torsocks` to PATH
 1. `source tornadocash-governance-cli.sh`
 
