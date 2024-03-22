@@ -80,7 +80,7 @@ function tornadocash_governance_cli {
 
   export TORNADO_GOVERNANCE_ADDRESS="0x5efda50f22d34F262c29268506C5Fa42cB56A1Ce" # LoopbackProxy
 
-  export BLOCK_NUMBER=$(cast block-number --rpc-url $RPC_URL)
+  export BLOCK_NUMBER=$(torsocks cast block-number --rpc-url $RPC_URL)
 
   if [[ "$#" -eq 0 ]]; then
 
