@@ -40,7 +40,7 @@ https://gitlab.torproject.org/tpo/core/torsocks/
 1. `forge install foundry-rs/forge-std`
 1. `forge install openzeppelin/openzeppelin-contracts`
 1. start `tor`
-1. add `torsocks` to PATH
+1. add `torsocks` to PATH and/or set current shell in Tor mode with `. torsocks on`
 1. `source tornadocash-governance-cli.sh`
 
 ### usage
