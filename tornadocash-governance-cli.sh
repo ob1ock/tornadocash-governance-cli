@@ -21,10 +21,12 @@ function fetchProposalDetails {
     echo
     local i=1
     for value in $decoded_proposal; do
-        if [ $i -eq 3 ] || [ $i -eq 5 ] || [ $i -eq 7 ]; then
+        if [ $i -eq 3 ] || [ $i -eq 5 ]; then
+            echo -n `date -d @$value`
+        elif [ $i -eq 4 ] || [ $i -eq 6 ]; then
+	    echo
+	elif [[ ($i -eq 7 || $i -eq 9) && $value != 0 ]]; then
             echo -n "$value "
-        elif [ $i -eq 4 ] || [ $i -eq 6 ] || [ $i -eq 8 ]; then
-            echo $value
         else
             echo $value
         fi
