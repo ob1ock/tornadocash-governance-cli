@@ -8,6 +8,8 @@ function fetchProposalDetails {
 
     local id=$1
     echo "Fetch details for proposal id: $id"
+    
+    echo `date`
 
     local decoded_proposal=$(decodeProposalsMethod $id)
 
