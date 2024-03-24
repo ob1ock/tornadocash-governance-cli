@@ -133,6 +133,7 @@ contract ProposalTest is Test {
 			proposal_id = vm.envUint("PROPOSAL_ID");
 		}
 
+		// todo account for execution delay in following warp
 		vm.warp(block.timestamp + 1 hours);
 
 		governance.castVote(proposal_id, true);
